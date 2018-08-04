@@ -48,7 +48,7 @@ Developer @GA in NYC
 
 body {
      color: #000;
-     /* background-color: #606161; */
+     background-color: #EDEDED;
      font-size: 12px;
      line-height: 1.4;
      font-family: Open Sans, Helvetica, Arial, sans-serif;
@@ -67,14 +67,6 @@ body {
   margin: auto;
 }
 
-header {
-
-}
-
-footer {
-
-}
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -87,13 +79,18 @@ header {
   background-color: #033048;
 }
 
+header div {
+  margin: 0 auto;
+}
+
 header h1 {
   color: white;
   display: inline-block;
   font-size: 40px;
   font-weight: 800;
   margin: 0;
-  padding: 25px;
+  margin: 0 5% 0 0;
+  text-align: left;
 }
 
 header nav {
@@ -104,7 +101,6 @@ header nav {
 }
 
 header nav ul li{
-  /* color: #f9e42e; */
   display: inline-block;
   list-style-type: none;
   padding: 20px;
@@ -130,7 +126,7 @@ main {
 article {
   clear: both;
   border-bottom: 1px solid #121212;
-  margin-right: 30px;
+  margin-right: 20px;                     /*Gutter*/
   padding-bottom: 40px;
   width: 700px;
 }
@@ -161,7 +157,6 @@ article p::first-letter {
 article a {
   color: #121212;
   background-color: #f9e42e 0;
-  /* float: right; */
   font-size: 24px;
   font-weight: 600;
   margin-left: 560px;
@@ -180,6 +175,7 @@ aside {
   display: inline-block;
   text-align: left;
   width: 240px;
+  vertical-align: top;
 }
 
 aside h3 {
@@ -191,16 +187,28 @@ aside nav ul {
   list-style: none;
 }
 
-aside nav ul li a {
+aside nav ul li a, aside p a {
   color: #121212; 
+}
+
+aside nav ul li a {
   font-size: 24px;
   font-weight: 300;
   text-decoration: none;
 }
 
+aside a:hover {
+  text-decoration: underline;
+}
+
 aside p {
   font-size: 22px;
-  font-weight: 300px;
+  font-weight: 300;
+}
+
+aside p a {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* ************** */
@@ -216,7 +224,6 @@ section {
 section a {
   color: white;
   background-color: #033048;
-  border: 1 solid #033048;
   border-radius: 5px;
   font-size: 24px;
   font-weight: 600;
@@ -226,7 +233,7 @@ section a {
 }
 
 section a:hover {
-  text-decoration: underline;
+  padding: 15px 75px;
 }
 
 /* ************* */
@@ -241,14 +248,15 @@ footer p {
   color: #f9e42e;
   font-size: 40px;
   font-weight: 800;
-  /* margin-bottom: 50px; */
 }
 
 footer a {
-  padding: 25px;
+  padding: 0 25px;
 }
+
 .copy-right {
   color: white;
   font-size: 9px;
   font-weight: 600;
+  margin-top: 60px;
 }
